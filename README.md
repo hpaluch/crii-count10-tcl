@@ -53,6 +53,10 @@ Now there should be generated file `../crii-count10_work/top.jed`. You can
   before using it
 - immediately after programming it should start counting in decimal on 7-segment display
 
+Tip: you can also find latest files under:
+- [dist/top.jed](dist/top.jed) - latest bitstream (JEDEC) file to program in iMPACT.
+- [dist/top.rpt](dist/top.rpt) - latest text report file - so you can see how much
+  is this CPLD utilized
 
 [Digilent CoolRunner-II CPLD Starter Board]: https://store.digilentinc.com/coolrunner-ii-cpld-starter-board-limited-time/
 [Xilinx ISE Webpack 14.7]: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive-ise.html
