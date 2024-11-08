@@ -13,7 +13,7 @@ Required Software
 
 # Status
 
+* Implementation now builds
 * Pending TCL script to generate project...
-* Pending first build
 
 

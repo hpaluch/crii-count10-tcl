@@ -59,7 +59,10 @@ parameter P_DIGITS = 4; // number of counted BCD digits (each takes 4 bits)
 localparam TOTAL_BITS = P_DIGITS*4;
 wire [TOTAL_BITS-1:0] digits;
 
-uptime #( P_DIGITS ) inst1 ( .rst (reset), .clk (clk), .tick_en (tick),
+wire tick_en;
+assign tick_en = ce && tick;
+
+uptime #( P_DIGITS ) inst1 ( .rst (reset), .clk (clk), .tick_en (tick_en),
                 .digits (digits));
 
 // display MUX handling
@@ -68,7 +71,7 @@ assign muxin = counter[12:11];
 
 reg [3:0] muxed_counter2;
 
-always @(muxin)
+always @(muxin or digits)
 begin
 	case ( muxin )
 		2'd0: begin disp_mux = 4'b1110; muxed_counter2 = digits[3:0]; end
