@@ -223,6 +223,7 @@ proc set_project_props {} {
 proc add_source_files {} {
 
    global myScript
+   global myPrefix
 
    if { ! [ open_project ] } {
       return false
