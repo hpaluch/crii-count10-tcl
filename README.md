@@ -14,6 +14,6 @@ Required Software
 # Status
 
 * Implementation now builds
-* Pending TCL script to generate project...
+* Early TCL script to create project
 
 
