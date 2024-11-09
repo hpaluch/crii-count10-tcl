@@ -4,6 +4,10 @@
 // Used in both Simulation and Implementation mode.
 // SPDX-License-Identifier: MIT
 
+// Tested environments:
+// 1. Xilinx ISE WebPack 14.7, XC2C256-7-TQ144, Digilent CoolRunner II
+// 2. Vivado 2015.1 Standard, xc7a200tfbg676-2, AC701 Eval Kit
+
 module uptime(rst, clk, tick_en, digits);
 // customizable parameter - number of BCD digits for uptime
 parameter P_DIGITS = 3;
@@ -19,12 +23,6 @@ input tick_en; // Uptime tick (related to clk), Active=
 output [TOTAL_BITS-1:0] digits;
 // variables
 reg [TOTAL_BITS-1:0] digits = {TOTAL_BITS{1'b0}};
-
-/*
-initial begin
-    digits = {TOTAL_BITS{1'b0}};
-end
-*/
 
 genvar ii;
 // "carry" when specific BCD digit overflows and needs adjustemnt
