@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: MIT
 
 // Tested environments:
-// 1. Xilinx ISE WebPack 14.7, XC2C256-7-TQ144, Digilent CoolRunner II
+// 1. Xilinx ISE 14.7, XC2C256-7-TQ144, Digilent CoolRunner II
 // 2. Vivado 2015.1 Standard, xc7a200tfbg676-2, AC701 Eval Kit
 
 module uptime(rst, clk, tick_en, digits);
