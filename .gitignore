@@ -34,7 +34,6 @@ _ngo/
 *.pad
 *.pnx
 *.rpt
-!dist/*.rpt
 *.syr
 *.tim
 *.tspec

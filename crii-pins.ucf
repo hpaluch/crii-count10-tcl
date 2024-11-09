@@ -1,5 +1,5 @@
-# crii-pins.ucf for tut03-disp
-NET 	"PCLK"			LOC = "P38"; #PCLK
+# crii-pins.ucf for Digilent CoolRunner II
+NET 	"PCLK"		BUFG=CLK | LOC = "P38"; #PCLK
 
 NET	"LD<0>"		LOC = "P69"; #LD0
 NET	"LD<1>"		LOC = "P68"; #LD1

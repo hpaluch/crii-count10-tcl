@@ -1,7 +1,7 @@
  
 cpldfit:  version P.20131013                        Xilinx Inc.
                                   Fitter Report
-Design Name: top                                 Date: 11- 8-2024,  4:45PM
+Design Name: top                                 Date: 11- 9-2024,  7:45AM
 Device Used: XC2C256-7-TQ144
 Fitting Status: Successful
 
@@ -68,11 +68,6 @@ End of Mapped Resource Summary
 
 WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
    use the default filename of 'top.ise'.
-INFO:Cpld - Inferring BUFG constraint for signal 'PCLK' based upon the LOC
-   constraint 'P38'. It is recommended that you declare this BUFG explicitedly
-   in your design. Note that for certain device families the output of a BUFG
-   constraint can not drive a gated clock, and the BUFG constraint will be
-   ignored.
 WARNING:Cpld - Unable to map all desired signals into function block, FB16.
    Buffering output signal CAT<2> to allow all signals assigned to this function
    block to be placed.
