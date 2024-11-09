@@ -58,5 +58,20 @@ Tip: you can also find latest files under:
 - [dist/top.rpt](dist/top.rpt) - latest text report file - so you can see how much
   is this CPLD utilized
 
+# Resources
+
+First and most important - Xilinx ISE 14.7 VM download:
+- https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_14.7_Win10_14.7_VM_0213_1.zip
+- once you unpack it there will be .ova file that you can import into VirtualBox.
+  There is even prepared USB passthrough for Digilent CoolRunner II board
+
+Xilinx ISE manuals are now available as ZIP file only (no longer online HTML
+version):
+- https://download.amd.com/docnav/documents/ise/ise-docs14_6.zip (unable to
+  find 14.7 manuals)
+- for example `cgd.pdf` describes constraints file, `devref.pdf` describes TCL
+  commands
+
+
 [Digilent CoolRunner-II CPLD Starter Board]: https://store.digilentinc.com/coolrunner-ii-cpld-starter-board-limited-time/
 [Xilinx ISE Webpack 14.7]: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive-ise.html
