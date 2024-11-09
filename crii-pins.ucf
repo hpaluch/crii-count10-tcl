@@ -1,4 +1,5 @@
 # crii-pins.ucf for Digilent CoolRunner II
+# SPDX-License-Identifier: MIT
 NET 	"PCLK"		BUFG=CLK | LOC = "P38"; #PCLK
 
 NET	"LD<0>"		LOC = "P69"; #LD0

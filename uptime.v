@@ -1,9 +1,8 @@
-// uptime.v - simple module to track system uptime as BCD digits (for easy
-// printing on Display or on UART)
-
-// Simulation only: fist number (1ns) is resolution of "#X". 2nd number simulation resolution
-// Xilinx recommends uniform values below
 `timescale 1ns / 1ps
+// uptime.v - simple module to track system uptime (decimal counter) as BCD
+// digits (for easy printing on Display or on UART).
+// Used in both Simulation and Implementation mode.
+// SPDX-License-Identifier: MIT
 
 module uptime(rst, clk, tick_en, digits);
 // customizable parameter - number of BCD digits for uptime

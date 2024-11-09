@@ -1,4 +1,6 @@
 `timescale 1ns / 1ps
+// top.v - main Verilog module for CoolRunner II design (Implementation)
+// SPDX-License-Identifier: MIT
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer:  Henryk Paluch
 // 

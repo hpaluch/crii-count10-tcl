@@ -1,8 +1,7 @@
-//  uptime_tf.v Uptime test fixture (TF) for module uptime.v
-//
-// fist number (1ns) is resolution of "#X". 2nd number simulation resolution
-// Xilinx recommends uniform values below
 `timescale 1ns / 1ps
+// uptime_tf.v - Uptime test fixture (TF) for module uptime.v
+// Simulation mode only
+// SPDX-License-Identifier: MIT
 
 module uptime_tf;
 // Inputs (from view of uptime.v module!)
