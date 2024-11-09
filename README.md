@@ -1,18 +1,26 @@
 # 4-digit Decimal Up Counter
 
 Here is 4-Digit Up Decimal counter demo for Digilent CoolRunner II board. It
-uses my advanced counter module [uptime.v](uptime.v) where number of BCD digits can be
-specify as instance parameter.
+uses my advanced counter module [uptime.v](uptime.v) where number of BCD digits
+can be specified as instance parameter.
+
+License: [MIT](LICENSE)
 
 Basis of this project comes from my:
 https://github.com/hpaluch/crii-sandbox/blob/master/tut03-disp/top.v which is
-hexadecimal counter hardcoded for 4 digits. However I added advanced [uptime](uptime.v)
-(N-digit BCD counting) module using `genvar` and `generate` Verilog constructs
-to properly handle hexadecimal to decimal digit overflows for any number of
-digits.
+hexadecimal counter hardcoded for 4 digits.
+
+However in this case I added advanced [uptime](uptime.v) (N-digit BCD Up counting)
+module using `genvar` and `generate` Verilog constructs to properly handle
+hexadecimal to decimal digit overflows for any number of digits.
+
+You can see it in action where [uptime.v](uptime.v) is used in:
+- Implementation [top.v](top.v) uses 4-digit decimal up counter
+- Simulation [uptime_tf.v](uptime_tf.v) uses 3-digit decimal up counter
 
 Just few days earlier I though that it was impossible to do that (make
-configurable number of BCD digits) in Verilog.
+configurable number of BCD digits and esp. handling variable number of overlfow
+glas) in Verilog.
 
 Required hardware:
 * [Digilent CoolRunner-II CPLD Starter Board][Digilent CoolRunner-II CPLD Starter Board]:
@@ -27,6 +35,7 @@ Required Software
 * Implementation now builds
 * It works - verified on real device
 * Verified project creation script [aa-create-project.tcl](aa-create-project.tcl).
+* Also simulation looks fine
 
 # Setup
 
@@ -51,10 +60,13 @@ Now there should be generated file `../crii-count10_work/top.jed`. You can
 - open `jtag-prog.cdf` and program your CoolRunner II board
 - NOTE: There is absolute pathname to `top.jed` - please check contents of above `.cdf` file
   before using it
-- immediately after programming it should start counting in decimal on 7-segment display
+- immediately after programming it should start counting up in decimal on 7-segment display
+- you can also press:
+  - BTN0 (right button) to RESET counter (stays in RESET until button is released)
+  - BTN1 (left button) to HOLD counter as long as button is pressed
 
-Tip: you can also find latest files under:
-- [dist/top.jed](dist/top.jed) - latest bitstream (JEDEC) file to program in iMPACT.
+Tip: you can also find latest generated files under:
+- [dist/top.jed](dist/top.jed) - latest bitstream (JEDEC) file to program CoolRunner II in iMPACT.
 - [dist/top.rpt](dist/top.rpt) - latest text report file - so you can see how much
   is this CPLD utilized
 
