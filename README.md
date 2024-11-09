@@ -20,7 +20,7 @@ You can see it in action where [uptime.v](uptime.v) is used in:
 
 Just few days earlier I though that it was impossible to do that (make
 configurable number of BCD digits and esp. handling variable number of overlfow
-glas) in Verilog.
+flags) in Verilog.
 
 Required hardware:
 * [Digilent CoolRunner-II CPLD Starter Board][Digilent CoolRunner-II CPLD Starter Board]:
