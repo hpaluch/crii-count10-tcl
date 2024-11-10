@@ -4,7 +4,7 @@ Here is 4-Digit Up Decimal counter demo for Digilent CoolRunner II board. It
 uses my advanced counter module [uptime.v](uptime.v) where number of BCD digits
 can be specified as instance parameter.
 
-![CoolRunner-II Up DecimalCounter](https://raw.githubusercontent.com/hpaluch/crii-count10-tcl/master/assets/crii-count10.jpg)
+![CoolRunner-II Up DecimalCounter](https://media.githubusercontent.com/media/hpaluch/crii-count10-tcl/master/assets/crii-count10.jpg)
 
 License: [MIT](LICENSE)
 
